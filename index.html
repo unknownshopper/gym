@@ -22,10 +22,12 @@
             
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <!-- <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
                     <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                     <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li class="nav-item"><a href="proyecto.html" class="nav-link">Proyecto</a></li>
+                    <li class="nav-item"><a href="proyecto.html" class="nav-link">Proyecto</a></li> -->
+                    <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#serviciossecundarios" class="nav-link">Servicios Secundarios</a></li>
                     <li class="nav-item"><a href="#contacto" class="nav-link btn-contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -48,7 +50,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="servicios">
         <div class="container">
             <h2>Nuestros Servicios para Gimnasios</h2>
             <div class="service-grid">
@@ -72,6 +74,32 @@
         </div>
     </section>
 
+    <section class="services" id="serviciossecundarios">
+        <div class="container">
+            <h2>Servicios Secundarios y Anexos</h2>
+            <div class="service-grid">
+                <!-- Supervisión de Nuevas Tecnologías -->
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Supervisión de Nuevas Tecnologías</h3>
+                    <p>Monitoreo y evaluación de presencia digital: redes sociales, sitio web, plataformas de inscripción, horarios y sistemas de pago en línea. Detectamos áreas de mejora y te ayudamos a optimizar la experiencia digital de tus clientes, asegurando una imagen profesional y procesos eficientes.</p>
+                </div>
+                <!-- Sistemas de Acceso RFID -->
+                <div class="service-card">
+                    <i class="fas fa-id-card service-icon"></i>
+                    <h3>Sistemas de Acceso RFID</h3>
+                    <p>Implementación y supervisión de sistemas RFID para control de acceso mediante pulseras inteligentes, registro automático de entradas y salidas de miembros, y gestión de inventarios de equipo del gimnasio. Mejora la seguridad, la automatización y el control operativo de tu gimnasio.</p>
+                </div>
+                <!-- Sistema Contable y Alertas de Pago -->
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar service-icon"></i>
+                    <h3>Sistema Contable y Alertas de Pago</h3>
+                    <p>Desarrollo e integración de sistemas contables personalizados, seguimiento de pagos de socios y generación de alertas automáticas para evitar retrasos. Facilita la administración financiera y mejora la cobranza, permitiéndote enfocarte en el crecimiento de tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="benefits">
         <div class="container">
             <h2>Beneficios para tu Gimnasio</h2>
@@ -89,14 +117,13 @@
         <div class="container">
             <h2>¿Listo para mejorar la experiencia en tu gimnasio?</h2>
             <p>Contáctanos para una consulta sin compromiso</p>
-            <a href="#contacto" class="btn btn-open-modal">Solicitar Información</a>
-        </div>
+            <button type="button" class="btn btn-open-modal">Solicitar Información</button>        </div>
     </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2025 The Unknown Shopper. Todos los derechos reservados.</p>
-            <p>Contacto: info@unknownshopper.com | Tel: (123) 456-7890</p>
+            <p>Contacto: the@unknownshoppers.com | <a href="https://wa.me/5219932171855">Whatsapp</a></p>
         </div>
     </footer>
 
@@ -129,9 +156,8 @@
                 </div>
                 
                 <div class="form-group form-submit">
-                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
-                </div>
-            </form>
+                    <button id="btnSolicitarInfo" type="button" class="btn btn-open-modal">Solicitar Información</button>
+                </form>
         </div>
     </div>
 

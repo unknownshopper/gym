@@ -195,4 +195,12 @@ if (contactForm) {
             header.classList.add('scrolled');
         }
     }
+
+    const btnSolicitarInfo = document.getElementById('btnSolicitarInfo');
+    if (btnSolicitarInfo) {
+        btnSolicitarInfo.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(e);
+        });
+    }
 });
